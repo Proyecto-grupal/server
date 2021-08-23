@@ -2,7 +2,7 @@
   "name": "server",
   "version": "0.1.0",
   "private": false,
-  "description": "Server side from Pokemon App",
+  "description": "Server Side Proyecto Grupal",
   "main": "index.js",
   "engines": {
     "node": ">=12.18.3",
