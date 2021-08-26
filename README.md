@@ -1,7 +1,7 @@
 # Server
  
 - Arquitecture: API Rest
-- Authentication: mail con codigo de verificacion?
+- Authentication: Passport
 - Validation: Express Validator
 - Security: Helmet - Express Rate Limit - Api key ?
 - CORS: Cors
