@@ -9,7 +9,8 @@
     "npm": ">=6.14.6"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "nodemon": "nodemon index.js" 
   },
   "dependencies": {
     "axios": "^0.21.1",
