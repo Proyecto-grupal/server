@@ -7,6 +7,7 @@ const getAll = () => {
 const getBest = (qty) => {
   return store
     .getAll()
+    .slice()
     .sort((b, a) => a.points - b.points)
     .slice(0, qty)
 }
