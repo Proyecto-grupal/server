@@ -1,7 +1,14 @@
 const store = require('./store')
 
 const getAll = () => {
-  return store.getAll()
+  return store.getAll().map(lesson => {
+    return (
+      {
+        id: lesson.id,
+        name: lesson.name
+      }
+    )
+  })
 }
 
 const getBest = (qty) => {
@@ -12,7 +19,12 @@ const getBest = (qty) => {
     .slice(0, qty)
 }
 
+const getDetail = (id) => {
+  return store.findById(id)
+}
+
 module.exports = {
   getAll,
-  getBest
+  getBest,
+  getDetail
 }
