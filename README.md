@@ -1,9 +1,11 @@
 # Server
  
-- Arquitecture: API Rest
-- Authentication: Passport
-- Validation: Express Validator
-- Security: Helmet - Express Rate Limit 
-- CORS: Cors
-- Compression : Compression
-- Linting: JavaScript Standard Style
+## Api stage:
+https://aprendoxd.herokuapp.com/
+
+## endpoints:
+
+- /category >> todas las categorías
+
+- /lesson >> todas las clases
+- /lesson/best/:n >> las 'n' clases mejor puntuadas
