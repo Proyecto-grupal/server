@@ -1,9 +1,10 @@
 const express = require('express')
 const router = express.Router()
+const { getAll } = require('./controller')
 
 router.get('/', (req, res) => {
-  console.log('estoy en endpoint category')
-  res.json(['JavaScript', 'React', 'Redux', 'Express'])
+  console.log('endpoint category')
+  res.json(getAll())
 })
 
 module.exports = router

@@ -1,9 +1,10 @@
 const express = require('express')
 const router = express.Router()
+const { getAll } = require('./controller')
 
 router.get('/', (req, res) => {
-  console.log('estoy en endpoint lesson')
-  res.json(['Lesson 1', 'Lesson 2', 'Lesson 3', 'Lesson 4'])
+  console.log('endpoint lesson')
+  res.json(getAll())
 })
 
 module.exports = router
